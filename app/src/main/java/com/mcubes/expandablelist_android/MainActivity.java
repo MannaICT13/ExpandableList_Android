@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private  HashMap<String,List<String>> childList;
     private  CustomAdapter customAdapter;
 
+    private  int lastPosition = -1;
 
 
     @Override
@@ -30,6 +31,16 @@ public class MainActivity extends AppCompatActivity {
 
         customAdapter = new CustomAdapter(this,parentList,childList);
         expandableListView.setAdapter(customAdapter);
+
+        expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+            @Override
+            public void onGroupExpand(int groupPosition) {
+                if(lastPosition != -1 && lastPosition != groupPosition){
+                    expandableListView.collapseGroup(lastPosition);
+                }
+                lastPosition = groupPosition;
+            }
+        });
 
 
     }
