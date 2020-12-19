@@ -1,3 +1,48 @@
 <resources>
     <string name="app_name">ExpandableList_Android</string>
+    <string name="textView_parent_name">TextView</string>
+    <string name="textView_child_name">TextView</string>
+
+    <string-array name="parent_name">
+
+        <item>Bangladesh</item>
+        <item>India</item>
+        <item>Pakisthan</item>
+        <item>Bhutan</item>
+        <item>Libia</item>
+        <item>Seria</item>
+        <item>Bangladesh</item>
+        <item>India</item>
+        <item>Pakisthan</item>
+        <item>Bhutan</item>
+        <item>Libia</item>
+        <item>Seria</item>
+
+
+
+
+    </string-array>
+
+
+
+
+
+    <string-array name="child_name">
+
+        <item>Bangladesh</item>
+        <item>India</item>
+        <item>Pakisthan</item>
+        <item>Bhutan</item>
+        <item>Libia</item>
+        <item>Seria</item>
+        <item>Bangladesh</item>
+        <item>India</item>
+        <item>Pakisthan</item>
+        <item>Bhutan</item>
+        <item>Libia</item>
+        <item>Seria</item>
+
+
+    </string-array>
+
 </resources>
