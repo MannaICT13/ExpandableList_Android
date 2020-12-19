@@ -24,11 +24,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        prepareList();
+
         expandableListView = findViewById(R.id.expendableViewId);
 
         customAdapter = new CustomAdapter(this,parentList,childList);
+        expandableListView.setAdapter(customAdapter);
 
-        prepareList();
+
     }
 
 
