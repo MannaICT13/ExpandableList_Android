@@ -13,8 +13,9 @@ public class MainActivity extends AppCompatActivity {
 
     private ExpandableListView expandableListView;
 
-    List<String> parentList;
-    HashMap<String,List<String>> childList;
+    private List<String> parentList;
+    private  HashMap<String,List<String>> childList;
+    private  CustomAdapter customAdapter;
 
 
 
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         expandableListView = findViewById(R.id.expendableViewId);
+
+        customAdapter = new CustomAdapter(this,parentList,childList);
 
         prepareList();
     }
